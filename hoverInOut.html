@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>disappearing ninja</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+	<script>$(document).ready(function(){
+		$('img').hover(function(){
+			$(this).attr("src", "emu-5.jpg");
+		}, function(){
+			$(this).attr("src", "http://placekitten.com/448/471")
+		});
+	});
+	</script>
+</head>
+<body>
+	<h1>jQuery - hover assignment</h1>
+	<h2>hover over a kitty to make it turn into an emu!</h2>
+	<div class='toplayer'>
+		<img src="http://placekitten.com/448/471">
+		<img src="http://placekitten.com/448/471">
+		<img src="http://placekitten.com/448/471">
+		<img src="http://placekitten.com/448/471">
+	</div>
+
+	<div class='bottomlayer'>
+		<img src="http://placekitten.com/448/471">
+		<img src="http://placekitten.com/448/471">
+		<img src="http://placekitten.com/448/471">
+		<img src="http://placekitten.com/448/471">
+	</div>
+
+</body>
+</html>
